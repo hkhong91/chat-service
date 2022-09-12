@@ -11,5 +11,4 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @EnableAutoConfiguration
 @EnableMongoAuditing
 @EnableMongoRepositories
-class ChatMongoDBConfiguration {
-}
+class ChatMongoDBConfiguration
