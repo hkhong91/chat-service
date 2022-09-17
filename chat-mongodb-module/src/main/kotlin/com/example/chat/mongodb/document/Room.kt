@@ -8,15 +8,15 @@ import java.time.Instant
 
 @Document(collation = "Room")
 data class Room(
-  @Id
-  val id: String,
-
   var title: String,
 
   var tags: Set<String>,
 
   var imageUrl: String,
 ) {
+  @Id
+  val id: String? = null
+
   var joinCount: Int = 0
 
   var likeCount: Int = 0

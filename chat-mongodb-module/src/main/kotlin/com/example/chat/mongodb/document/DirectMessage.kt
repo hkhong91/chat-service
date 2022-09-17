@@ -8,15 +8,15 @@ import java.time.Instant
 
 @Document(collation = "DirectMessage")
 data class DirectMessage(
-  @Id
-  val id: String,
-
   val senderId: String,
 
   val receiverId: String,
 
   val content: String,
 ) {
+  @Id
+  val id: String? = null
+
   @CreatedDate
   var regDtTs: Instant? = null
 

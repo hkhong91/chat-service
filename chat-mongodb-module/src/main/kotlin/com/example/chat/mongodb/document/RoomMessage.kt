@@ -8,15 +8,15 @@ import java.time.Instant
 
 @Document(collation = "RoomMessage")
 data class RoomMessage(
-  @Id
-  val id: String,
-
   val senderId: String,
 
   val roomId: String,
 
   val content: String,
 ) {
+  @Id
+  val id: String? = null
+
   @CreatedDate
   var regDtTs: Instant? = null
 

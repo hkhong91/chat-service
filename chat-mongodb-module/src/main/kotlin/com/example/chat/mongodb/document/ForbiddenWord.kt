@@ -6,13 +6,9 @@ import org.springframework.data.annotation.LastModifiedDate
 import org.springframework.data.mongodb.core.mapping.Document
 import java.time.Instant
 
-@Document(collation = "Friend")
-data class Friend(
-  val userId: String,
-
-  val friendId: String,
-
-  val friendName: String,
+@Document(collation = "ForbiddenWord")
+data class ForbiddenWord(
+  val word: String,
 ) {
   @Id
   val id: String? = null

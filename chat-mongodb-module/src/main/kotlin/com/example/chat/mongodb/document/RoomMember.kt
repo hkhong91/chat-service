@@ -9,13 +9,13 @@ import java.time.Instant
 
 @Document(collation = "RoomMember")
 data class RoomMember(
-  @Id
-  val id: String,
-
   val roomId: String,
 
   val memberId: String,
 ) {
+  @Id
+  val id: String? = null
+
   val status: MemberStatus = MemberStatus.JOINED
 
   @CreatedDate
