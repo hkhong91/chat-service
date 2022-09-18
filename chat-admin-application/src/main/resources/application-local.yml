@@ -1,0 +1,13 @@
+server:
+  port: 8081
+  tomcat:
+    accesslog:
+      enabled: true
+  http2:
+    enabled: true
+logging:
+  level:
+    ROOT: INFO
+    com.example.chat.admin: DEBUG
+
+

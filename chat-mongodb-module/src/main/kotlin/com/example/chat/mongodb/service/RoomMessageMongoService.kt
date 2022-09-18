@@ -9,4 +9,6 @@ class RoomMessageMongoService(
   private val roomMessageRepository: RoomMessageRepository,
 ) {
   fun create(message: RoomMessage) = roomMessageRepository.save(message)
+
+  fun getAll() = roomMessageRepository.findAll()
 }
